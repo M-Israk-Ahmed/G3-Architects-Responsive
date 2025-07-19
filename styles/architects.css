@@ -214,6 +214,16 @@ font-weight: 600;
     filter: grayscale(100%);
 }
 
+footer{
+
+    max-width: 1440px;
+    margin: 130px auto;
+    text-align: center;
+}
+.foot-text{
+        padding: 40px 410px;
+}
+
 /* responsive for smaller/mobile device*/
 @media  screen and (max-width: 576px) {
     .navbar{
