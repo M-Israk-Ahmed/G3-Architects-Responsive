@@ -168,7 +168,7 @@ margin-bottom: 3rem;
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-
+   justify-items: center;
 }
 
 
@@ -177,6 +177,7 @@ margin-bottom: 3rem;
 border-radius: 8px;
 padding: 55px 35px;
 max-width: 240px;
+margin: 0 auto;
 text-align: center;
 }
 
@@ -191,6 +192,27 @@ margin-bottom: 10px;
 font-weight: 600;
 }
 
+
+/* section4 */
+
+.sponsor-info{
+    max-width: 540px;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+
+    gap: 3rem;
+}
+
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
 
 /* responsive for smaller/mobile device*/
 @media  screen and (max-width: 576px) {
@@ -208,11 +230,16 @@ font-weight: 600;
         padding: 0 2rem;
         flex-direction: column;
     }
-    .feature-list-left{
+    .feature-list-left, .fact-container, .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
     }
     .feature-list-right{
         margin: 0 auto;
+    }
+
+    .facts{
+        text-align: center;
     }
 }
 
@@ -238,17 +265,25 @@ font-weight: 600;
         padding: 0 2rem;
         flex-direction: column;
     }
-    .feature-list-left{
+    .feature-list-left, .fact-container, .sponsor-companies{
         grid-template-columns: repeat(2, 1fr);
     }
     .feature-list-right{
         margin: 0 auto;
     }
+
+    .fact-container{
+        gap: 2rem;
+    }
+
+    .facts{
+        text-align: center;
+    }
 }
 
 /* large device */
 @media  (996px < width <=1440px) {
-    .navbar, .banner{
+    .navbar, .banner, main{
         max-width: 90vw;
         margin: 0 auto;
     }
