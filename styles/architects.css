@@ -39,6 +39,16 @@
 .btn-color-orng{
 background: rgb(255, 144, 14);
 }
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+
+}
 /* header */
 
 /* header {
@@ -56,6 +66,7 @@ background: rgb(255, 144, 14);
 }
 
 .navbar {
+            padding-top: 2rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -115,10 +126,76 @@ padding: 20px 25px;
 
 }
 
+/* main body */
+/* section 1 */
+.feature-list{
+    gap: 4.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-list-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    border-radius: 8px;
+}
+
+.feature-list-right{
+    max-width: 535px;
+    /* margin-left: 6rem; */
+
+}
+
+
+.feature-title{
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 3rem;
+}
+
+.feature-description{
+    margin-bottom: 3rem;
+}
+
+.feature-word{
+    color: rgb(255, 144, 14);
+}
+
+/* section3 */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+
+.fact-card{
+    border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+padding: 55px 35px;
+max-width: 240px;
+text-align: center;
+}
+
+.fact-number{
+    font-size: 3rem;
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+font-weight: 600;
+}
+
+
 /* responsive for smaller/mobile device*/
 @media  screen and (max-width: 576px) {
     .navbar{
-        padding-top: 32px;
+
         flex-direction: column;
         gap: 30px;
     }
@@ -126,13 +203,24 @@ padding: 20px 25px;
         flex-direction: column;
         align-items: center;
     }
+
+    .feature-list{
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+    .feature-list-left{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-list-right{
+        margin: 0 auto;
+    }
 }
 
 /* medium device */
 
 @media  (576px < width <= 996px) {
     .navbar{
-        padding-top: 32px;
+
         flex-direction: column;
         gap: 30px;
     }
@@ -143,6 +231,17 @@ padding: 20px 25px;
 
     .navbar, .banner{
         max-width: 90vw;
+        margin: 0 auto;
+    }
+
+        .feature-list{
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+    .feature-list-left{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-list-right{
         margin: 0 auto;
     }
 }
