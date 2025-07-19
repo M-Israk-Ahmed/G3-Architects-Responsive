@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+/* shared styles */
+
+.display-flex {
+  display: flex;
+}
+
+.bg-header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.bg-primary {
+  background-color: white;
+}
+
+.text-black {
+  color: rgb(19, 19, 19);
+}
+
+.text-grey {
+  color: rgb(66, 66, 66);
+}
+
+.text-light-grey {
+  color: rgb(114, 114, 114);
+}
+.btn-color-orng{
+background: rgb(255, 144, 14);
+}
+/* header */
+
+/* header {
+  padding: 3rem 15rem;
+} */
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-left {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-right-links {
+  font-size: 1rem;
+  font-weight: 500;
+
+  list-style: none;
+  padding-left: 0px;
+  gap: 40px;
+}
+
+.nav-item-links {
+  text-decoration: none;
+}
+
+/* banner */
+.banner{
+    /* margin-top: 6rem; */
+    /* flex-direction: column;
+    justify-content: center; */
+}
+.banner-content{
+    max-width: 862px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.banner-title{
+    margin-top: 5rem;
+    font-size: 4rem;
+font-weight: 700;
+margin-bottom: 30px;
+}
+.banner-description{
+    font-size: 1rem;
+font-weight: 400;
+margin-bottom: 30px;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+font-weight: 600;
+padding: 20px 25px;
+
+}
+
+.banner img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* responsive for smaller/mobile device*/
+@media  screen and (max-width: 576px) {
+    .navbar{
+        padding-top: 32px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-right-links{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* medium device */
+
+@media  (576px < width <= 996px) {
+    .navbar{
+        padding-top: 32px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-right-links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar, .banner{
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+/* large device */
+@media  (996px < width <=1440px) {
+    .navbar, .banner{
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+}
