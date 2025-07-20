@@ -45,15 +45,16 @@ main{
     margin: 0 auto;
 }
 
-main > section{
+main>section{
     margin-top: 130px;
 
 }
 /* header */
 
-/* header {
-  padding: 3rem 15rem;
-} */
+header {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .navbar, .banner{
     max-width: 1440px;
@@ -164,6 +165,54 @@ margin-bottom: 3rem;
     color: rgb(255, 144, 14);
 }
 
+/* section 2 */
+
+.features-enjoy{
+    gap: 145px;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-enjoy img{
+    width: 100%;
+}
+.enjoy-title{
+    font-size:3rem;
+font-weight: 700;
+border-left: 5px solid  rgb(255, 144, 14);;
+margin-bottom: 24px;
+padding-left: 1.25rem;
+margin-top: 30px;
+}
+
+.enjoy-card{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.09);
+    padding: 30px;
+
+    margin-top: 30px;
+}
+
+.enjoy-card-title{
+    font-size: 1.25rem;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.enjoy-card-description{
+    font-size: 1rem;
+font-weight: 400;
+}
+#exp-badge{
+    margin-left: -92px;
+    margin-top: -123px;
+}
+
+#exp-badge-text{
+     font-size: 4rem;
+font-weight: 700;
+}
+
 /* section3 */
 .fact-container{
     display: grid;
@@ -198,7 +247,6 @@ font-weight: 600;
 .sponsor-info{
     max-width: 540px;
     text-align: center;
-
     margin: 0 auto;
 }
 
@@ -217,16 +265,27 @@ font-weight: 600;
 footer{
 
     max-width: 1440px;
-    margin: 130px auto;
-    text-align: center;
+    margin: 8.12rem auto;
+    /* padding: 2.5rem 25rem; */
+
+    /* display: block;
+    justify-content: center; */
+    
+
+}
+
+footer>div{
+        /* margin:2.5rem auto; */
+        padding: 2.5rem 0;
 }
 .foot-text{
-        padding: 40px 410px;
+        /* margin: 2.5rem auto; */
+        text-align: center;
 }
 
 /* responsive for smaller/mobile device*/
 @media  screen and (max-width: 576px) {
-    .navbar{
+    .navbar, .features-enjoy{
 
         flex-direction: column;
         gap: 30px;
@@ -251,7 +310,22 @@ footer{
     .facts{
         text-align: center;
     }
+
+    #exp-badge{
+    margin-left:20px;
+    margin-top: 20px;
 }
+#exp-badge-text{
+    font-size: 2rem;
+}
+.badge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
 
 /* medium device */
 
@@ -293,7 +367,7 @@ footer{
 
 /* large device */
 @media  (996px < width <=1440px) {
-    .navbar, .banner, main{
+    .navbar, .banner, section{
         max-width: 90vw;
         margin: 0 auto;
     }
